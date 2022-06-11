@@ -34,7 +34,7 @@ export default function Home() {
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
-              <div className="section" style={{ backgroundColor: "#6CF5E0" }}>
+              <div className="section" style={{ overflow: 'hidden', backgroundColor: "#6CF5E0" }}>
                 <SectionWrapper>
                   <MainContent>
                     <BigTitle>Oieeee amor!</BigTitle>
@@ -80,7 +80,7 @@ export default function Home() {
                   </ButtonWrapper>
                 </SectionWrapper>
               </div>
-              <div className="section" style={{ backgroundColor: "#50B5A6" }}>
+              <div className="section" style={{ overflow: 'hidden', backgroundColor: "#50B5A6" }}>
                 <SectionWrapper>
                   <MainContent
                     style={{ padding: "0px 5%", JustifyContent: "flex-start" }}
@@ -107,7 +107,7 @@ export default function Home() {
                   </ButtonWrapper>
                 </SectionWrapper>
               </div>
-              <div className="section" style={{ backgroundColor: "#34756B" }}>
+              <div className="section" style={{ overflow: 'hidden', backgroundColor: "#34756B" }}>
                 <SectionWrapper>
                   <MainContent
                     style={{ padding: "0px 5%", JustifyContent: "flex-start" }}
@@ -134,7 +134,7 @@ export default function Home() {
                   </ButtonWrapper>
                 </SectionWrapper>
               </div>
-              <div className="section" style={{ backgroundColor: "#1D423C" }}>
+              <div className="section" style={{ overflow: 'hidden', backgroundColor: "#1D423C" }}>
                 <SectionWrapper>
                   <MainContent
                     style={{ padding: "0px 5%", JustifyContent: "flex-start" }}
@@ -161,7 +161,7 @@ export default function Home() {
                   </ButtonWrapper>
                 </SectionWrapper>
               </div>
-              <div className="section" style={{ backgroundColor: "#183631" }}>
+              <div className="section" style={{ overflow: 'hidden', backgroundColor: "#183631" }}>
                 <SectionWrapper>
                   <MainContent
                     style={{ padding: "0px 5%", JustifyContent: "flex-start" }}
@@ -188,7 +188,7 @@ export default function Home() {
                   </ButtonWrapper>
                 </SectionWrapper>
               </div>
-              <div className="section" style={{ backgroundColor: "#16332E" }}>
+              <div className="section" style={{ overflow: 'hidden', backgroundColor: "#16332E" }}>
                 <SectionWrapper>
                   <MainContent
                     style={{ padding: "0px 5%", JustifyContent: "flex-start" }}
@@ -215,7 +215,7 @@ export default function Home() {
                   </ButtonWrapper>
                 </SectionWrapper>
               </div>
-              <div className="section" style={{ backgroundColor: "#0F2420" }}>
+              <div className="section" style={{ overflow: 'hidden', backgroundColor: "#0F2420" }}>
                 <SectionWrapper>
                   <MainContent>
                     <BigTitle>Eu amo vc ❤️</BigTitle>

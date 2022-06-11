@@ -141,6 +141,10 @@ export const BigTitle = styled.p`
     @media(min-width: 953px) {
         font-size: 9vw;
     }
+    @media(min-width: 1100px) {
+        margin-top: 3%;
+        font-size: 8vw;
+    }
     @media(min-width: 1304px) {
         margin-top: 3%;
         font-size: 8vw;
@@ -157,6 +161,9 @@ export const SecondTitle = styled.p`
     }
     @media(min-width: 953px) {
         font-size: 4vw;
+    }
+    @media(min-width: 1100px) {
+        font-size: 3vw;
     }
     @media(min-width: 1304px) {
         margin-top: 3%;
@@ -176,6 +183,10 @@ export const FinalText = styled.p`
     }
     @media(min-width: 953px) {
         font-size: 3vw;
+        margin-top: 2%;
+    }
+    @media(min-width: 1100px) {
+        font-size: 2vw;
         margin-top: 2%;
     }
     @media(min-width: 1304px) {
@@ -200,6 +211,9 @@ export const PrincipalTitle = styled.p`
     @media(min-width: 953px) {
         font-size: 4vw;
     }
+    @media(min-width: 1100px) {
+        font-size: 2vw;
+    }
     @media(min-width: 1304px) {
         font-size: 3vw;
     }
@@ -222,6 +236,9 @@ export const SecondTranslateTitle = styled.p`
     @media(min-width: 953px) {
         font-size: 4vw;
     }
+    @media(min-width: 1100px) {
+        font-size: 2vw;
+    }
     @media(min-width: 1304px) {
         font-size: 3vw;
     }
@@ -234,6 +251,11 @@ export const ImgView = styled.img`
     width: 600px;
     height: 400px;
     flex-grow: 1;
+
+    @media(max-width: 1304px) {
+        width: 300px;
+        height: 100px;
+    }
     
     @media(max-width: 655px) {
         width: 400px;
