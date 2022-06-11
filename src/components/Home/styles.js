@@ -234,10 +234,6 @@ export const ImgView = styled.img`
     width: 600px;
     height: 400px;
     flex-grow: 1;
-    /* @media(min-width: 655px) {
-        width: 500px;
-        height: 300px;
-    } */
     
     @media(max-width: 655px) {
         width: 400px;
