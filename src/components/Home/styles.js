@@ -234,6 +234,25 @@ export const ImgView = styled.img`
     width: 600px;
     height: 400px;
     flex-grow: 1;
+    /* @media(min-width: 655px) {
+        width: 500px;
+        height: 300px;
+    } */
+    
+    @media(max-width: 655px) {
+        width: 400px;
+        height: 200px;
+    }
+
+    @media(max-width: 450px) {
+        width: 300px;
+        height: 100px;
+    }
+
+    @media(max-width: 320px) {
+        width: 250px;
+        height: 50px;
+    }
 `;
 
 
