@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Img1 from "./../../assets/img1.jpg";
 import Img2 from "./../../assets/img2.jpg";
 import Img3 from "./../../assets/img3.jpg";
 import Img4 from "./../../assets/img4.jpg";
 import Img5 from "./../../assets/img5.jpg";
 import Img6 from "./../../assets/img6.jpg";
+import MusicLoad from "./../../assets/music.mp3";
 import {
   ButtonDown,
   SectionWrapper,
@@ -18,23 +19,39 @@ import {
   SecondTranslateTitle,
   ImgView,
 } from "./styles";
-import { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
 import ReactFullpage from "@fullpage/react-fullpage";
 import { BiChevronDownCircle, BiChevronUpCircle } from "react-icons/bi";
 
 export default function Home() {
+  useEffect(() => {
+    document.querySelector("audio").currentTime = 47;
+    let playAttempt = setInterval(() => {
+      document.querySelector("audio").play()
+        .then(() => {
+          clearInterval(playAttempt);
+        })
+        .catch(error => {
+          console.log('Unable to play the video, User has not interacted yet.');
+        });
+    }, 3000);
+  }, []);
+
   return (
     <>
+      <audio controls loop autoplay style={{display: 'none'}} currentTime={46}>
+        <source src={MusicLoad} type="audio/mp3" />
+      </audio>
       <ReactFullpage
-        //fullpage options
         licenseKey={"YOUR_KEY_HERE"}
-        scrollingSpeed={1000} /* Options here */
+        scrollingSpeed={1000}
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
-              <div className="section" style={{ overflow: 'hidden', backgroundColor: "#6CF5E0" }}>
+              <div
+                className="section"
+                style={{ overflow: "hidden", backgroundColor: "#6CF5E0" }}
+              >
                 <SectionWrapper>
                   <MainContent>
                     <BigTitle>Oieeee amor!</BigTitle>
@@ -80,7 +97,10 @@ export default function Home() {
                   </ButtonWrapper>
                 </SectionWrapper>
               </div>
-              <div className="section" style={{ overflow: 'hidden', backgroundColor: "#50B5A6" }}>
+              <div
+                className="section"
+                style={{ overflow: "hidden", backgroundColor: "#50B5A6" }}
+              >
                 <SectionWrapper>
                   <MainContent
                     style={{ padding: "0px 5%", JustifyContent: "flex-start" }}
@@ -107,7 +127,10 @@ export default function Home() {
                   </ButtonWrapper>
                 </SectionWrapper>
               </div>
-              <div className="section" style={{ overflow: 'hidden', backgroundColor: "#34756B" }}>
+              <div
+                className="section"
+                style={{ overflow: "hidden", backgroundColor: "#34756B" }}
+              >
                 <SectionWrapper>
                   <MainContent
                     style={{ padding: "0px 5%", JustifyContent: "flex-start" }}
@@ -134,7 +157,10 @@ export default function Home() {
                   </ButtonWrapper>
                 </SectionWrapper>
               </div>
-              <div className="section" style={{ overflow: 'hidden', backgroundColor: "#1D423C" }}>
+              <div
+                className="section"
+                style={{ overflow: "hidden", backgroundColor: "#1D423C" }}
+              >
                 <SectionWrapper>
                   <MainContent
                     style={{ padding: "0px 5%", JustifyContent: "flex-start" }}
@@ -161,7 +187,10 @@ export default function Home() {
                   </ButtonWrapper>
                 </SectionWrapper>
               </div>
-              <div className="section" style={{ overflow: 'hidden', backgroundColor: "#183631" }}>
+              <div
+                className="section"
+                style={{ overflow: "hidden", backgroundColor: "#183631" }}
+              >
                 <SectionWrapper>
                   <MainContent
                     style={{ padding: "0px 5%", JustifyContent: "flex-start" }}
@@ -188,7 +217,10 @@ export default function Home() {
                   </ButtonWrapper>
                 </SectionWrapper>
               </div>
-              <div className="section" style={{ overflow: 'hidden', backgroundColor: "#16332E" }}>
+              <div
+                className="section"
+                style={{ overflow: "hidden", backgroundColor: "#16332E" }}
+              >
                 <SectionWrapper>
                   <MainContent
                     style={{ padding: "0px 5%", JustifyContent: "flex-start" }}
@@ -215,7 +247,10 @@ export default function Home() {
                   </ButtonWrapper>
                 </SectionWrapper>
               </div>
-              <div className="section" style={{ overflow: 'hidden', backgroundColor: "#0F2420" }}>
+              <div
+                className="section"
+                style={{ overflow: "hidden", backgroundColor: "#0F2420" }}
+              >
                 <SectionWrapper>
                   <MainContent>
                     <BigTitle>Eu amo vc ❤️</BigTitle>
