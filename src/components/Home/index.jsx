@@ -26,6 +26,7 @@ import { BiChevronDownCircle, BiChevronUpCircle } from "react-icons/bi";
 export default function Home() {
   useEffect(() => {
     document.querySelector("audio").currentTime = 47;
+    document.querySelector("audio").load();
     let playAttempt = setInterval(() => {
       document.querySelector("audio").play()
         .then(() => {
